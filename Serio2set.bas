@@ -1,6 +1,6 @@
 "Serio2set" LINE 70
 
-1 LET C=65200: LET N$="Cserio"+STR$ PEEK (C+3): LET T=PEEK (C+2):
+   1 LET C=65200: LET N$="Cserio"+STR$ PEEK (C+3): LET T=PEEK (C+2):
      LET T=(T<>CODE "T")+(T<>CODE "t"): LET L=PEEK (C+4)+PEEK (C+5)*256: LET M$="Serio2set"
    2 LET CF=3546900: LET B=INT (CF/((PEEK (C+6)+PEEK (C+7)*256+2)*26+3)+.5): LET F=PEEK (C+8)
    3 PRINT AT 7,0;"SETTINGS OF """;N$;"""";'
